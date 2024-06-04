@@ -1,6 +1,6 @@
-from . import mysql
 
-def create_user_table():
+
+def create_user_table(mysql):
     conn = mysql.connect()
     cursor = conn.cursor()
     cursor.execute('''CREATE TABLE IF NOT EXISTS users (
